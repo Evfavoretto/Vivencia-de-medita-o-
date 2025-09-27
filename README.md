@@ -151,58 +151,11 @@
         <div class="divider" aria-hidden="true"></div>
         <div class="cta">
           <a href="#inscricao" class="btn primary">Quero participar</a>
-          <a href="https://wa.me/5549998110445?text=Quero%20saber%20mais%20sobre%20a%20Viv%C3%AAncia%20de%20Medita%C3%A7%C3%A3o%20%26%20Respira%C3%A7%C3%A3o" class="btn ghost" target="_blank" rel="noopener">Falar no WhatsApp</a>
+          <a href="https://wa.me/5549998110445?text=Quero%20saber%20mais%20sobre%20a%20Viv%C3%AAncia" class="btn ghost" target="_blank" rel="noopener">Falar no WhatsApp</a>
         </div>
       </div>
     </div>
   </div>
-
-  <!-- O que é / Benefícios -->
-  <section>
-    <div class="wrap">
-      <div class="grid two">
-        <div class="card pink">
-          <span class="tag">O que é</span>
-          <h2 class="grad-left">Vivência terapêutica</h2>
-          <p>Integra técnicas de respiração, meditação e atenção plena para desacelerar, aliviar tensões e abrir espaço para clareza emocional.</p>
-        </div>
-        <div class="card blue">
-          <span class="tag">Benefícios</span>
-          <h2 class="grad-left">Resultados que você sente</h2>
-          <ul class="list-check">
-            <li>Redução do estresse e da ansiedade</li>
-            <li>Melhora do sono e do foco</li>
-            <li>Regulação emocional e paz interna</li>
-            <li>Consciência corporal e energia estável</li>
-            <li>Mais presença, fé e confiança na vida</li>
-            <li>Ferramentas simples para o dia a dia</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Para quem é / Como funciona -->
-  <section>
-    <div class="wrap">
-      <div class="grid two">
-        <div class="card">
-          <span class="tag">Para quem é</span>
-          <h2 class="grad-left">Aberta a todos os níveis</h2>
-          <ul class="list-check">
-            <li>Pessoas em busca de leveza e organização mental</li>
-            <li>Quem vive “no 360” e precisa desacelerar</li>
-            <li>Iniciantes e praticantes — sem pré-requisitos</li>
-          </ul>
-        </div>
-        <div class="card">
-          <span class="tag">Como funciona</span>
-          <h2 class="grad-left">Encontro presencial em grupo</h2>
-          <p>Práticas conduzidas, pausas conscientes e orientações para aplicar no cotidiano.</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- Instrutores -->
   <section>
@@ -211,12 +164,12 @@
       <h2 class="section-title" style="margin-top:10px">Evandro &amp; Alinne</h2>
       <div class="instrutores-grid">
         <!-- Evandro -->
-        <figure class="inst-card" role="group" aria-labelledby="evandro-name">
+        <figure class="inst-card">
           <div class="avatar-wrap"><div class="avatar-ring">
-            <img class="avatar" src="Da Evandro (2).jpg" alt="Evandro — foto de perfil redonda">
+            <img class="avatar" src="evandro.jpg" alt="Evandro — foto de perfil redonda">
           </div></div>
           <figcaption>
-            <div id="evandro-name" class="inst-name">Evandro</div>
+            <div class="inst-name">Evandro</div>
             <p class="inst-role">Facilitador • Respiração & Meditação</p>
             <ul class="inst-list">
               <li>Formação em Respiração Consciente (Breathwork)</li>
@@ -227,12 +180,12 @@
           </figcaption>
         </figure>
         <!-- Alinne -->
-        <figure class="inst-card" role="group" aria-labelledby="alinne-name">
+        <figure class="inst-card">
           <div class="avatar-wrap"><div class="avatar-ring">
-            <img class="avatar" src="Da Alinne.jpg" alt="Alinne — foto de perfil redonda">
+            <img class="avatar" src="alinne.jpg" alt="Alinne — foto de perfil redonda">
           </div></div>
           <figcaption>
-            <div id="alinne-name" class="inst-name">Alinne</div>
+            <div class="inst-name">Alinne</div>
             <p class="inst-role">Facilitadora • Respiração & Presença</p>
             <ul class="inst-list">
               <li>Formação em Meditação Guiada & Mindfulness</li>
@@ -254,7 +207,7 @@
         <span class="tag" style="font-size:18px;padding:12px 16px;border-radius:14px">Investimento</span>
         <div class="price">R$ 440,00</div>
         <div class="cta" style="margin-top:6px">
-          <a href="https://wa.me/5549998110445?text=Quero%20garantir%20minha%20vaga%20na%20Viv%C3%AAncia" class="btn primary" target="_blank" rel="noopener">Garantir minha vaga</a>
+          <a href="https://wa.me/5549998110445?text=Quero%20garantir%20minha%20vaga" class="btn primary" target="_blank" rel="noopener">Garantir minha vaga</a>
         </div>
       </div>
     </div>
@@ -267,48 +220,9 @@
       <h2 class="section-title" style="margin-top:10px">O que as pessoas sentiram</h2>
       <div class="testimonials">
         <div class="t-card"><p class="t-name">Roselei Teles</p><p>“Fomos iluminados pela luz divina e vimos a proteção de Deus na nossa vida. Que paz — gratidão Aline e Evandro.”</p></div>
-        <div class="t-card"><p class="t-name">Germano Micheli</p><p>“Meditação e respiração de hoje foi incrível. Cada vez que participo fica melhor — não dá vontade de parar.”</p></div>
+        <div class="t-card"><p class="t-name">Germano Micheli</p><p>“Cada vez que participo fica melhor — não dá vontade de parar.”</p></div>
         <div class="t-card"><p class="t-name">Alini De Paris</p><p>“Sou grata pela experiência — me trouxe leveza, presença e conexão.”</p></div>
-        <div class="t-card"><p class="t-name">Marisa</p><p>“Percebi o quanto é importante dar atenção à respiração e desacelerar. Já estou colocando em prática — tem me ajudado muito.”</p></div>
-        <div class="t-card"><p class="t-name">Ivete</p><p>“Aprendi a controlar meus pensamentos. Saí em paz, com leveza e tive uma noite de sono tranquila.”</p></div>
-        <div class="t-card"><p class="t-name">Michely</p><p>“Dia maravilhoso de muita aprendizagem. A partir de hoje vou ser outra pessoa. Só agradecimentos.”</p></div>
-        <div class="t-card"><p class="t-name">Idalina</p><p>“Saí outra pessoa: leve, tranquila e confiante. A conexão do grupo e a troca de energias foram mágicas.”</p></div>
-        <div class="t-card"><p class="t-name">Onira Marolli</p><p>“A vivência me tranquilizou e organizou os pensamentos. Agora é seguir com calma na alma.”</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section>
-    <div class="wrap">
-      <span class="tag">FAQ</span>
-      <h2 class="section-title" style="margin-top:10px">Perguntas Frequentes</h2>
-      <div class="faq">
-        <div class="faq-item">
-          <button class="faq-q" aria-expanded="false"><span>Preciso ter experiência prévia?</span><span class="mark">+</span></button>
-          <div class="faq-a" aria-hidden="true"><div class="faq-a-inner">Não. É para todos os níveis — você será guiado passo a passo.</div></div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-q" aria-expanded="false"><span>O que levar?</span><span class="mark">+</span></button>
-          <div class="faq-a" aria-hidden="true"><div class="faq-a-inner">Roupas confortáveis, água e, se quiser, seu tapete/almofada.</div></div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-q" aria-expanded="false"><span>Duração do encontro</span><span class="mark">+</span></button>
-          <div class="faq-a" aria-hidden="true"><div class="faq-a-inner">Imersão de aproximadamente 3 horas.</div></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA final -->
-  <section style="padding:32px 20px">
-    <div class="wrap">
-      <div class="footer-cta">
-        <div>
-          <div style="font-weight:800;color:var(--rose);letter-spacing:.06em;text-transform:uppercase;font-size:12px">Respire diferente</div>
-          <h3 style="margin:6px 0 0;font-size:22px;color:var(--ink)">Você no controle da sua presença — um passo de cada vez.</h3>
-        </div>
-        <a href="https://wa.me/5549998110445?text=Quero%20participar%20da%20Viv%C3%AAncia" class="btn primary" target="_blank" rel="noopener">Inscrever-se agora</a>
+        <div class="t-card"><p class="t-name">Marisa</p><p>“Percebi o quanto é importante dar atenção à respiração e desacelerar. Já estou colocando em prática.”</p></div>
       </div>
     </div>
   </section>
@@ -337,11 +251,4 @@
             }
           });
           const isOpen = item.classList.toggle('open');
-          btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-          panel.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
-        });
-      });
-    })();
-  </script>
-</body>
-</html>
+          btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false
