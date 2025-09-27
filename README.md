@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="utf-8" />
@@ -23,7 +22,6 @@
       --line:#E9EEF5;
       --bg:#FFFFFF;
       --success:#10B981;
-      --warn:#E11D48;
     }
     *{box-sizing:border-box}
     html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);
@@ -31,11 +29,11 @@
     img{max-width:100%;display:block}
     a{text-decoration:none}
 
-    /* Barra topo */
+    /* Barra topo (rosa) */
     .top-bar{
-      background:var(--blue); color:#fff; text-align:center;
+      background:var(--rose); color:#fff; text-align:center;
       padding:14px 10px; font-weight:900; letter-spacing:.04em;
-      font-size:clamp(18px,4.4vw,26px);
+      font-size:clamp(18px,4.4vw,26px); text-transform:uppercase;
     }
 
     /* Layout base */
@@ -59,12 +57,12 @@
     /* Títulos */
     .section-title{
       font-size:clamp(28px,4.2vw,42px);font-weight:900;margin:0 0 18px;
-      background:linear-gradient(90deg,var(--rose),var(--blue));
+      background:linear-gradient(90deg,var(--rose) 0%, var(--rose) 100%);
       -webkit-background-clip:text;background-clip:text;color:transparent;text-align:center;
     }
     .grad-left{
       font-size:clamp(26px,4vw,34px);margin:0 0 12px;font-weight:900;
-      background:linear-gradient(90deg,var(--rose),var(--blue));
+      background:linear-gradient(90deg,var(--rose) 0%, var(--rose) 100%);
       -webkit-background-clip:text;background-clip:text;color:transparent;text-align:left;
     }
     p{margin:8px 0 0;font-size:18px;color:var(--soft)}
@@ -72,6 +70,13 @@
     li{margin:8px 0}
     .list-check li{list-style:none;padding-left:28px;position:relative}
     .list-check li:before{content:"✓";position:absolute;left:0;top:0;color:var(--success);font-weight:900}
+
+    /* Tarja rosa de seção */
+    .tag{
+      display:inline-block; background:var(--rose); color:#fff;
+      font-weight:900; letter-spacing:.06em; text-transform:uppercase;
+      border-radius:12px; padding:10px 14px; font-size:clamp(14px,2.4vw,16px);
+    }
 
     /* Cards */
     .card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 10px 28px rgba(31,35,48,.05)}
@@ -92,23 +97,20 @@
 
     /* Preço */
     .price-card{text-align:center;padding:24px;border:1px solid var(--line);border-radius:18px;box-shadow:0 10px 28px rgba(0,0,0,.05);max-width:360px;margin:0 auto}
-    .price{font-size:40px;font-weight:900;color:var(--rose);margin:10px 0}
-    .pill{display:inline-block;background:var(--blue-2);color:var(--blue);padding:6px 12px;border-radius:999px;font-weight:800;font-size:12px;margin-bottom:6px}
+    .price{font-size:44px;font-weight:900;color:#C9376E;margin:10px 0}
 
     /* Depoimentos */
     .testimonials{display:grid;gap:18px}
     @media(min-width:900px){.testimonials{grid-template-columns:1fr 1fr}}
     .t-card{border:1px solid var(--line);border-radius:16px;padding:16px 18px;box-shadow:0 8px 22px rgba(0,0,0,.05);background:#fff}
     .t-name{font-weight:900;margin:0 0 6px;font-size:16px;color:#0f172a}
-    .t-meta{font-size:12px;color:#94a3b8;margin-top:6px}
-    .shot{border:1px dashed #e2e8f0;border-radius:12px;padding:8px;background:#f8fafc}
 
     /* FAQ */
     .faq{max-width:980px;margin:0 auto}
     .faq-item{margin:12px 0;border-radius:14px;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,.06);border:1px solid var(--line)}
     .faq-q{width:100%;text-align:left;background:var(--rose);border:0;padding:16px 18px;font-size:18px;font-weight:900;color:#fff;cursor:pointer;display:flex;justify-content:space-between;align-items:center}
     .faq-q .mark{font-weight:900;color:#fff}
-    .faq-a{max-height:0;overflow:hidden;transition:max-height .28s ease;background:var(--blue);color:#fff}
+    .faq-a{max-height:0;overflow:hidden;transition:max-height .28s ease;background:#5cc3be;color:#fff}
     .faq-a-inner{padding:16px 18px;font-size:16px;line-height:1.55}
     .faq-item.open .faq-a{max-height:360px}
     .faq-item.open .faq-q .mark{opacity:.9}
@@ -116,7 +118,7 @@
 
     /* CTA final + rodapé */
     .footer-cta{background:var(--blue-2);border:1px solid #dbeafe;border-radius:16px;padding:26px;display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:space-between}
-    footer{padding:28px 0;background:var(--blue);color:#fff;font-size:14px;text-align:center}
+    footer{padding:28px 0;background:var(--rose);color:#fff;font-size:14px;text-align:center}
 
     /* WhatsApp flutuante (opcional) */
     .whats-float{
@@ -130,7 +132,7 @@
 </head>
 <body>
 
-  <!-- Topo -->
+  <!-- Topo (rosa) -->
   <div class="top-bar" role="banner">Vivência de Meditação & Respiração Terapêutica</div>
 
   <!-- Hero -->
@@ -153,16 +155,20 @@
     <div class="wrap">
       <div class="grid two">
         <div class="card pink">
-          <h2 id="sobre" class="grad-left">O que é</h2>
-          <p>Uma vivência terapêutica que integra técnicas de respiração, meditação e atenção plena para desacelerar, aliviar tensões e abrir espaço para clareza emocional.</p>
+          <span class="tag" id="sobre">O que é</span>
+          <h2 class="grad-left">Vivência terapêutica</h2>
+          <p>Integra técnicas de respiração, meditação e atenção plena para desacelerar, aliviar tensões e abrir espaço para clareza emocional.</p>
         </div>
         <div class="card blue">
-          <h2 class="grad-left">Benefícios</h2>
+          <span class="tag">Benefícios</span>
+          <h2 class="grad-left">Resultados que você sente</h2>
           <ul class="list-check">
-            <li>Redução do estresse e ansiedade</li>
+            <li>Redução do estresse e da ansiedade</li>
             <li>Melhora do sono e do foco</li>
             <li>Regulação emocional e paz interna</li>
+            <li>Consciência corporal e energia estável</li>
             <li>Mais presença, fé e confiança na vida</li>
+            <li>Ferramentas simples para o dia a dia</li>
           </ul>
         </div>
       </div>
@@ -174,49 +180,51 @@
     <div class="wrap">
       <div class="grid two">
         <div class="card">
-          <h2 class="grad-left">Para quem é</h2>
+          <span class="tag">Para quem é</span>
+          <h2 class="grad-left">Aberta a todos os níveis</h2>
           <ul class="list-check">
             <li>Pessoas em busca de leveza e organização mental</li>
             <li>Quem vive “no 360” e precisa desacelerar</li>
-            <li>Iniciantes e praticantes — não precisa experiência</li>
+            <li>Iniciantes e praticantes — sem pré-requisitos</li>
           </ul>
         </div>
         <div class="card">
-          <h2 class="grad-left">Como funciona</h2>
-          <p>Encontro presencial em grupo, com práticas conduzidas, pausas conscientes e orientações simples para aplicar no cotidiano.</p>
+          <span class="tag">Como funciona</span>
+          <h2 class="grad-left">Encontro presencial em grupo</h2>
+          <p>Práticas conduzidas, pausas conscientes e orientações para aplicar no cotidiano.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Instrutores -->
+  <!-- Instrutores (com barra rosa) -->
   <section aria-labelledby="mentores">
     <div class="wrap mentores">
-      <h2 id="mentores" class="section-title">Instrutores</h2>
+      <span class="tag">Instrutores</span>
+      <h2 id="mentores" class="section-title" style="margin-top:10px">Aline &amp; Evandro</h2>
       <img src="https://via.placeholder.com/800x520.png?text=Aline+%26+Evandro" alt="Aline & Evandro — instrutores da vivência">
-      <p><strong>Aline & Evandro</strong> — conduzem vivências com olhar humano e acolhedor, unindo respiração, meditação e inteligência emocional para um cotidiano mais leve e consciente.</p>
+      <p>Conduzem vivências com olhar humano e acolhedor, unindo respiração, meditação e inteligência emocional para um cotidiano mais leve e consciente.</p>
     </div>
   </section>
 
-  <!-- Investimento -->
+  <!-- Investimento (selo rosa grande + novo valor) -->
   <section id="inscricao" aria-labelledby="precos">
     <div class="wrap">
-      <h2 id="precos" class="section-title">Investimento</h2>
       <div class="price-card" role="region" aria-label="Inscrição">
-        <div class="pill">Vagas limitadas</div>
-        <div class="price">R$ 197,00</div>
-        <p>Confirme data e local pelo WhatsApp.</p>
-        <div class="cta" style="margin-top:10px">
+        <span class="tag" id="precos" style="font-size:18px;padding:12px 16px;border-radius:14px">Investimento</span>
+        <div class="price">R$ 440,00</div>
+        <div class="cta" style="margin-top:6px">
           <a href="https://wa.me/5549998110445?text=Quero%20garantir%20minha%20vaga%20na%20Viv%C3%AAncia" class="btn primary" target="_blank" rel="noopener">Garantir minha vaga</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Depoimentos reais -->
+  <!-- Depoimentos reais (com barra rosa no topo) -->
   <section id="depoimentos" aria-labelledby="deps">
     <div class="wrap">
-      <h2 id="deps" class="section-title">Depoimentos Reais</h2>
+      <span class="tag">Depoimentos Reais</span>
+      <h2 id="deps" class="section-title" style="margin-top:10px">O que as pessoas sentiram</h2>
       <div class="testimonials">
         <div class="t-card">
           <p class="t-name">Roselei Teles</p>
@@ -236,7 +244,7 @@
         </div>
         <div class="t-card">
           <p class="t-name">Ivete</p>
-          <p>“Aprendi a controlar meus pensamentos. Saí em paz, com leveza e tive uma noite de sono tranquila. Decidida a mudar.”</p>
+          <p>“Aprendi a controlar meus pensamentos. Saí em paz, com leveza e tive uma noite de sono tranquila.”</p>
         </div>
         <div class="t-card">
           <p class="t-name">Michely</p>
@@ -251,29 +259,14 @@
           <p>“A vivência me tranquilizou e organizou os pensamentos. Agora é seguir com calma na alma.”</p>
         </div>
       </div>
-
-      <!-- Bloco opcional com prints (substitua os src pelos arquivos locais) -->
-      <details class="shot" style="margin-top:16px">
-        <summary><strong>Ver prints dos depoimentos (opcional)</strong></summary>
-        <div class="grid two" style="margin-top:10px">
-          <figure class="card"><img src="63ED87B5-87FA-477E-8CB0-DDCD850D182A.jpeg" alt="Print do depoimento de Roselei Teles"><figcaption class="t-meta">WhatsApp — Roselei</figcaption></figure>
-          <figure class="card"><img src="1C7CE439-37BB-434C-86D9-85E03993B71D.jpeg" alt="Print do depoimento de Germano"><figcaption class="t-meta">WhatsApp — Germano</figcaption></figure>
-          <figure class="card"><img src="F7924712-005A-459A-8C81-6F0DC145374B.jpeg" alt="Print do depoimento de Alini"><figcaption class="t-meta">WhatsApp — Alini</figcaption></figure>
-          <figure class="card"><img src="ED04E1DF-5250-4BCA-A5EC-53B0076E9182.jpeg" alt="Print do depoimento de Marisa"><figcaption class="t-meta">WhatsApp — Marisa</figcaption></figure>
-          <figure class="card"><img src="7488D1B0-EF84-4197-9877-4249B227878B.jpeg" alt="Print do depoimento de Ivete"><figcaption class="t-meta">WhatsApp — Ivete</figcaption></figure>
-          <figure class="card"><img src="C609235C-7101-4267-81DD-8B38F0CA64A2.jpeg" alt="Print do depoimento de Michely"><figcaption class="t-meta">WhatsApp — Michely</figcaption></figure>
-          <figure class="card"><img src="42ED8DA8-7A63-4E2A-BAD4-E12EBB2E9867.jpeg" alt="Print do depoimento de Alini 2"><figcaption class="t-meta">WhatsApp — Alini</figcaption></figure>
-          <figure class="card"><img src="09C741B9-4EE8-4FE8-AB72-79330590B064.jpeg" alt="Print do depoimento de Idalina"><figcaption class="t-meta">WhatsApp — Idalina</figcaption></figure>
-          <figure class="card"><img src="D6536D40-73D4-461E-836E-82D6CD211D5E.jpeg" alt="Print do depoimento de Onira"><figcaption class="t-meta">WhatsApp — Onira</figcaption></figure>
-        </div>
-      </details>
     </div>
   </section>
 
   <!-- FAQ -->
   <section id="faq" aria-labelledby="faqtitle">
     <div class="wrap">
-      <h2 id="faqtitle" class="section-title">Perguntas Frequentes</h2>
+      <span class="tag">FAQ</span>
+      <h2 id="faqtitle" class="section-title" style="margin-top:10px">Perguntas Frequentes</h2>
       <div class="faq">
         <div class="faq-item">
           <button class="faq-q" aria-expanded="false"><span>Preciso ter experiência prévia?</span><span class="mark">+</span></button>
@@ -285,7 +278,7 @@
         </div>
         <div class="faq-item">
           <button class="faq-q" aria-expanded="false"><span>Duração do encontro</span><span class="mark">+</span></button>
-          <div class="faq-a" aria-hidden="true"><div class="faq-a-inner">Imersão de aproximadamente 3 horas (datas/locais confirmados via WhatsApp).</div></div>
+          <div class="faq-a" aria-hidden="true"><div class="faq-a-inner">Imersão de aproximadamente 3 horas.</div></div>
         </div>
       </div>
     </div>
