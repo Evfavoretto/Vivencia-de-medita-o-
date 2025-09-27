@@ -3,7 +3,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Vivência de Meditação & Respiração Terapêutica</title>
-  <meta name="description" content="Uma vivência prática para reduzir estresse, acalmar a mente e reconectar com a presença — conduzida por Evandro & Alinne." />
+  <meta name="description" content="Vivência prática para reduzir estresse, acalmar a mente e reconectar com a presença — conduzida por Evandro & Alinne." />
+  <!-- SEO/OG -->
   <meta property="og:title" content="Vivência de Meditação & Respiração Terapêutica" />
   <meta property="og:description" content="Respiração consciente, meditação guiada e relaxamento profundo para leveza e clareza." />
   <meta property="og:type" content="website" />
@@ -89,7 +90,7 @@
     .primary:hover{filter:brightness(1.05)}
     .ghost:hover{background:var(--blue);color:#fff}
 
-    /* Instrutores */
+    /* ===== Instrutores (avatar redondo com anel) ===== */
     .instrutores-grid{display:grid;gap:22px;grid-template-columns:1fr}
     @media(min-width:800px){.instrutores-grid{grid-template-columns:1fr 1fr}}
     .inst-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:0 10px 26px rgba(0,0,0,.06);text-align:center}
@@ -151,25 +152,73 @@
         <div class="divider" aria-hidden="true"></div>
         <div class="cta">
           <a href="#inscricao" class="btn primary">Quero participar</a>
-          <a href="https://wa.me/5549998110445?text=Quero%20saber%20mais%20sobre%20a%20Viv%C3%AAncia" class="btn ghost" target="_blank" rel="noopener">Falar no WhatsApp</a>
+          <a href="https://wa.me/5549998110445?text=Quero%20saber%20mais%20sobre%20a%20Viv%C3%AAncia%20de%20Medita%C3%A7%C3%A3o%20%26%20Respira%C3%A7%C3%A3o" class="btn ghost" target="_blank" rel="noopener">Falar no WhatsApp</a>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- O que é / Benefícios -->
+  <section>
+    <div class="wrap">
+      <div class="grid two">
+        <div class="card pink">
+          <span class="tag">O que é</span>
+          <h2 class="grad-left">Vivência terapêutica</h2>
+          <p>Integra técnicas de respiração, meditação e atenção plena para desacelerar, aliviar tensões e abrir espaço para clareza emocional.</p>
+        </div>
+        <div class="card blue">
+          <span class="tag">Benefícios</span>
+          <h2 class="grad-left">Resultados que você sente</h2>
+          <ul class="list-check">
+            <li>Redução do estresse e da ansiedade</li>
+            <li>Melhora do sono e do foco</li>
+            <li>Regulação emocional e paz interna</li>
+            <li>Consciência corporal e energia estável</li>
+            <li>Mais presença, fé e confiança na vida</li>
+            <li>Ferramentas simples para o dia a dia</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Para quem é / Como funciona -->
+  <section>
+    <div class="wrap">
+      <div class="grid two">
+        <div class="card">
+          <span class="tag">Para quem é</span>
+          <h2 class="grad-left">Aberta a todos os níveis</h2>
+          <ul class="list-check">
+            <li>Pessoas em busca de leveza e organização mental</li>
+            <li>Quem vive “no 360” e precisa desacelerar</li>
+            <li>Iniciantes e praticantes — sem pré-requisitos</li>
+          </ul>
+        </div>
+        <div class="card">
+          <span class="tag">Como funciona</span>
+          <h2 class="grad-left">Encontro presencial em grupo</h2>
+          <p>Práticas conduzidas, pausas conscientes e orientações para aplicar no cotidiano.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Instrutores -->
   <section>
     <div class="wrap">
       <span class="tag">Instrutores</span>
       <h2 class="section-title" style="margin-top:10px">Evandro &amp; Alinne</h2>
+
       <div class="instrutores-grid">
         <!-- Evandro -->
-        <figure class="inst-card">
+        <figure class="inst-card" role="group" aria-labelledby="evandro-name">
           <div class="avatar-wrap"><div class="avatar-ring">
             <img class="avatar" src="evandro.jpg" alt="Evandro — foto de perfil redonda">
           </div></div>
           <figcaption>
-            <div class="inst-name">Evandro</div>
+            <div id="evandro-name" class="inst-name">Evandro</div>
             <p class="inst-role">Facilitador • Respiração & Meditação</p>
             <ul class="inst-list">
               <li>Formação em Respiração Consciente (Breathwork)</li>
@@ -179,13 +228,14 @@
             </ul>
           </figcaption>
         </figure>
+
         <!-- Alinne -->
-        <figure class="inst-card">
+        <figure class="inst-card" role="group" aria-labelledby="alinne-name">
           <div class="avatar-wrap"><div class="avatar-ring">
             <img class="avatar" src="alinne.jpg" alt="Alinne — foto de perfil redonda">
           </div></div>
           <figcaption>
-            <div class="inst-name">Alinne</div>
+            <div id="alinne-name" class="inst-name">Alinne</div>
             <p class="inst-role">Facilitadora • Respiração & Presença</p>
             <ul class="inst-list">
               <li>Formação em Meditação Guiada & Mindfulness</li>
@@ -196,6 +246,7 @@
           </figcaption>
         </figure>
       </div>
+
       <p class="inst-note">Evandro &amp; Alinne conduzem juntos a Vivência de Meditação &amp; Respiração Terapêutica.</p>
     </div>
   </section>
@@ -227,6 +278,41 @@
     </div>
   </section>
 
+  <!-- FAQ -->
+  <section>
+    <div class="wrap">
+      <span class="tag">FAQ</span>
+      <h2 class="section-title" style="margin-top:10px">Perguntas Frequentes</h2>
+      <div class="faq">
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false"><span>Preciso ter experiência prévia?</span><span class="mark">+</span></button>
+          <div class="faq-a" aria-hidden="true"><div class="faq-a-inner">Não. É para todos os níveis — você será guiado passo a passo.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false"><span>O que levar?</span><span class="mark">+</span></button>
+          <div class="faq-a" aria-hidden="true"><div class="faq-a-inner">Roupas confortáveis, água e, se quiser, seu tapete/almofada.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false"><span>Duração do encontro</span><span class="mark">+</span></button>
+          <div class="faq-a" aria-hidden="true"><div class="faq-a-inner">Imersão de aproximadamente 3 horas.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA final -->
+  <section style="padding:32px 20px">
+    <div class="wrap">
+      <div class="footer-cta">
+        <div>
+          <div style="font-weight:800;color:var(--rose);letter-spacing:.06em;text-transform:uppercase;font-size:12px">Respire diferente</div>
+          <h3 style="margin:6px 0 0;font-size:22px;color:var(--ink)">Você no controle da sua presença — um passo de cada vez.</h3>
+        </div>
+        <a href="https://wa.me/5549998110445?text=Quero%20participar%20da%20Viv%C3%AAncia" class="btn primary" target="_blank" rel="noopener">Inscrever-se agora</a>
+      </div>
+    </div>
+  </section>
+
   <!-- Rodapé -->
   <footer>© 2025 Vivência de Meditação & Respiração Terapêutica — Todos os direitos reservados.</footer>
 
@@ -235,7 +321,7 @@
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A10 10 0 0 0 3.2 17.7L2 22l4.4-1.2A10 10 0 1 0 20.5 3.5Zm-8.4 2.2c4.1 0 7.4 3.3 7.4 7.4a7.4 7.4 0 0 1-10.1 6.8l-.3-.1-2.6.7.7-2.5-.1-.3a7.4 7.4 0 0 1 5-11.9Zm4.2 9.8c-.2.6-1.1 1-1.5 1.1-.4.1-.9.1-1.5 0s-1.5-.5-2.6-1.1c-1-.6-1.8-1.6-2.1-2.1-.3-.5-.5-1.3-.1-1.9.2-.3.5-.8.8-.8h.6c.1 0 .4-.1.6.5.2.6.8 2 .9 2.2.1.2.1.4 0 .6s-.2.4-.4.6c-.2.2-.4.4-.2.7.2.3.9 1.4 2.1 2 .9.5 1.6.6 1.9.4.3-.2.4-.5.6-.8.2-.3.5-.4.8-.3l1.9.9c.3.1.5.3.6.5Z"/></svg>
   </a>
 
-  <!-- FAQ toggle -->
+  <!-- JS: FAQ acessível (abre um por vez) -->
   <script>
     (function(){
       const items = document.querySelectorAll('.faq-item');
@@ -251,4 +337,11 @@
             }
           });
           const isOpen = item.classList.toggle('open');
-          btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false
+          btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+          panel.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
