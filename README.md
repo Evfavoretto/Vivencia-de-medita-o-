@@ -3,8 +3,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Vivência de Meditação & Respiração Terapêutica</title>
-  <meta name="description" content="Uma vivência prática para reduzir estresse, acalmar a mente e reconectar com a presença — conduzida por Aline & Evandro." />
-  <!-- SEO/OG -->
+  <meta name="description" content="Uma vivência prática para reduzir estresse, acalmar a mente e reconectar com a presença — conduzida por Evandro & Alinne." />
   <meta property="og:title" content="Vivência de Meditação & Respiração Terapêutica" />
   <meta property="og:description" content="Respiração consciente, meditação guiada e relaxamento profundo para leveza e clareza." />
   <meta property="og:type" content="website" />
@@ -29,14 +28,13 @@
     img{max-width:100%;display:block}
     a{text-decoration:none}
 
-    /* Barra topo (rosa) */
+    /* Barra topo */
     .top-bar{
       background:var(--rose); color:#fff; text-align:center;
       padding:14px 10px; font-weight:900; letter-spacing:.04em;
       font-size:clamp(18px,4.4vw,26px); text-transform:uppercase;
     }
 
-    /* Layout base */
     .wrap{max-width:1100px;margin:0 auto}
     section{padding:56px 20px;border-bottom:1px solid var(--line)}
     .grid{display:grid;gap:24px}
@@ -57,12 +55,12 @@
     /* Títulos */
     .section-title{
       font-size:clamp(28px,4.2vw,42px);font-weight:900;margin:0 0 18px;
-      background:linear-gradient(90deg,var(--rose) 0%, var(--rose) 100%);
+      background:linear-gradient(90deg,var(--rose),var(--rose));
       -webkit-background-clip:text;background-clip:text;color:transparent;text-align:center;
     }
     .grad-left{
       font-size:clamp(26px,4vw,34px);margin:0 0 12px;font-weight:900;
-      background:linear-gradient(90deg,var(--rose) 0%, var(--rose) 100%);
+      background:linear-gradient(90deg,var(--rose),var(--rose));
       -webkit-background-clip:text;background-clip:text;color:transparent;text-align:left;
     }
     p{margin:8px 0 0;font-size:18px;color:var(--soft)}
@@ -71,11 +69,11 @@
     .list-check li{list-style:none;padding-left:28px;position:relative}
     .list-check li:before{content:"✓";position:absolute;left:0;top:0;color:var(--success);font-weight:900}
 
-    /* Tarja rosa de seção */
+    /* Tarja rosa */
     .tag{
-      display:inline-block; background:var(--rose); color:#fff;
-      font-weight:900; letter-spacing:.06em; text-transform:uppercase;
-      border-radius:12px; padding:10px 14px; font-size:clamp(14px,2.4vw,16px);
+      display:inline-block;background:var(--rose);color:#fff;
+      font-weight:900;letter-spacing:.06em;text-transform:uppercase;
+      border-radius:12px;padding:10px 14px;font-size:clamp(14px,2.4vw,16px);
     }
 
     /* Cards */
@@ -92,12 +90,22 @@
     .ghost:hover{background:var(--blue);color:#fff}
 
     /* Instrutores */
-    .mentores{text-align:center}
-    .mentores img{max-width:360px;border-radius:16px;box-shadow:0 10px 26px rgba(0,0,0,.08);margin:12px auto 6px}
+    .instrutores-grid{display:grid;gap:22px;grid-template-columns:1fr}
+    @media(min-width:800px){.instrutores-grid{grid-template-columns:1fr 1fr}}
+    .inst-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:0 10px 26px rgba(0,0,0,.06);text-align:center}
+    .inst-name{margin:10px 0 4px;font-weight:900;color:var(--ink);font-size:18px}
+    .inst-role{margin:0;color:var(--soft);font-size:14px}
+    .avatar-wrap{width:160px;height:160px;margin:8px auto 12px;display:grid;place-items:center;border-radius:50%;
+      background:conic-gradient(from 200deg,#f6d,#ff9a9e,#fecfef,#f6d);}
+    .avatar-ring{width:144px;height:144px;border-radius:50%;background:#fff;display:grid;place-items:center}
+    .avatar{width:132px;height:132px;border-radius:50%;object-fit:cover;display:block}
+    .inst-list{margin:10px auto 0;max-width:520px;text-align:left;color:var(--soft);font-size:15px;line-height:1.55}
+    .inst-list li{margin:6px 0}
+    .inst-note{margin-top:10px;font-size:14px;color:#64748b;text-align:center}
 
     /* Preço */
     .price-card{text-align:center;padding:24px;border:1px solid var(--line);border-radius:18px;box-shadow:0 10px 28px rgba(0,0,0,.05);max-width:360px;margin:0 auto}
-    .price{font-size:44px;font-weight:900;color:#C9376E;margin:10px 0}
+    .price{font-size:44px;font-weight:900;color:var(--rose);margin:10px 0}
 
     /* Depoimentos */
     .testimonials{display:grid;gap:18px}
@@ -114,26 +122,25 @@
     .faq-a-inner{padding:16px 18px;font-size:16px;line-height:1.55}
     .faq-item.open .faq-a{max-height:360px}
     .faq-item.open .faq-q .mark{opacity:.9}
-    .faq-q:focus{outline:3px solid var(--blue-2)}
 
     /* CTA final + rodapé */
     .footer-cta{background:var(--blue-2);border:1px solid #dbeafe;border-radius:16px;padding:26px;display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:space-between}
     footer{padding:28px 0;background:var(--rose);color:#fff;font-size:14px;text-align:center}
 
-    /* WhatsApp flutuante (opcional) */
+    /* WhatsApp flutuante */
     .whats-float{
       position:fixed; right:22px; bottom:18px; z-index:1000;
       width:60px; height:60px; border-radius:50%;
       background:#25D366; box-shadow:0 12px 28px rgba(0,0,0,.18);
       display:flex; align-items:center; justify-content:center;
     }
-    .whats-float svg{width:30px; height:30px; fill:#fff}
+    .whats-float svg{width:30px;height:30px;fill:#fff}
   </style>
 </head>
 <body>
 
-  <!-- Topo (rosa) -->
-  <div class="top-bar" role="banner">Vivência de Meditação & Respiração Terapêutica</div>
+  <!-- Topo -->
+  <div class="top-bar">Vivência de Meditação & Respiração Terapêutica</div>
 
   <!-- Hero -->
   <div class="hero">
@@ -151,11 +158,11 @@
   </div>
 
   <!-- O que é / Benefícios -->
-  <section aria-labelledby="sobre">
+  <section>
     <div class="wrap">
       <div class="grid two">
         <div class="card pink">
-          <span class="tag" id="sobre">O que é</span>
+          <span class="tag">O que é</span>
           <h2 class="grad-left">Vivência terapêutica</h2>
           <p>Integra técnicas de respiração, meditação e atenção plena para desacelerar, aliviar tensões e abrir espaço para clareza emocional.</p>
         </div>
@@ -197,21 +204,54 @@
     </div>
   </section>
 
-  <!-- Instrutores (com barra rosa) -->
-  <section aria-labelledby="mentores">
-    <div class="wrap mentores">
+  <!-- Instrutores -->
+  <section>
+    <div class="wrap">
       <span class="tag">Instrutores</span>
-      <h2 id="mentores" class="section-title" style="margin-top:10px">Aline &amp; Evandro</h2>
-      <img src="https://via.placeholder.com/800x520.png?text=Aline+%26+Evandro" alt="Aline & Evandro — instrutores da vivência">
-      <p>Conduzem vivências com olhar humano e acolhedor, unindo respiração, meditação e inteligência emocional para um cotidiano mais leve e consciente.</p>
+      <h2 class="section-title" style="margin-top:10px">Evandro &amp; Alinne</h2>
+      <div class="instrutores-grid">
+        <!-- Evandro -->
+        <figure class="inst-card" role="group" aria-labelledby="evandro-name">
+          <div class="avatar-wrap"><div class="avatar-ring">
+            <img class="avatar" src="Da Evandro (2).jpg" alt="Evandro — foto de perfil redonda">
+          </div></div>
+          <figcaption>
+            <div id="evandro-name" class="inst-name">Evandro</div>
+            <p class="inst-role">Facilitador • Respiração & Meditação</p>
+            <ul class="inst-list">
+              <li>Formação em Respiração Consciente (Breathwork)</li>
+              <li>Constelação Familiar & Sistêmica</li>
+              <li>Inteligência Emocional e Comunicação Não Violenta</li>
+              <li>Condução de grupos e vivências</li>
+            </ul>
+          </figcaption>
+        </figure>
+        <!-- Alinne -->
+        <figure class="inst-card" role="group" aria-labelledby="alinne-name">
+          <div class="avatar-wrap"><div class="avatar-ring">
+            <img class="avatar" src="Da Alinne.jpg" alt="Alinne — foto de perfil redonda">
+          </div></div>
+          <figcaption>
+            <div id="alinne-name" class="inst-name">Alinne</div>
+            <p class="inst-role">Facilitadora • Respiração & Presença</p>
+            <ul class="inst-list">
+              <li>Formação em Meditação Guiada & Mindfulness</li>
+              <li>Respiração Terapêutica e Regulação Emocional</li>
+              <li>Constelação Sistêmica (atendimento em grupo)</li>
+              <li>Experiência em acolhimento e processos de cura</li>
+            </ul>
+          </figcaption>
+        </figure>
+      </div>
+      <p class="inst-note">Evandro &amp; Alinne conduzem juntos a Vivência de Meditação &amp; Respiração Terapêutica.</p>
     </div>
   </section>
 
-  <!-- Investimento (selo rosa grande + novo valor) -->
-  <section id="inscricao" aria-labelledby="precos">
+  <!-- Investimento -->
+  <section id="inscricao">
     <div class="wrap">
-      <div class="price-card" role="region" aria-label="Inscrição">
-        <span class="tag" id="precos" style="font-size:18px;padding:12px 16px;border-radius:14px">Investimento</span>
+      <div class="price-card">
+        <span class="tag" style="font-size:18px;padding:12px 16px;border-radius:14px">Investimento</span>
         <div class="price">R$ 440,00</div>
         <div class="cta" style="margin-top:6px">
           <a href="https://wa.me/5549998110445?text=Quero%20garantir%20minha%20vaga%20na%20Viv%C3%AAncia" class="btn primary" target="_blank" rel="noopener">Garantir minha vaga</a>
@@ -220,53 +260,29 @@
     </div>
   </section>
 
-  <!-- Depoimentos reais (com barra rosa no topo) -->
-  <section id="depoimentos" aria-labelledby="deps">
+  <!-- Depoimentos -->
+  <section>
     <div class="wrap">
       <span class="tag">Depoimentos Reais</span>
-      <h2 id="deps" class="section-title" style="margin-top:10px">O que as pessoas sentiram</h2>
+      <h2 class="section-title" style="margin-top:10px">O que as pessoas sentiram</h2>
       <div class="testimonials">
-        <div class="t-card">
-          <p class="t-name">Roselei Teles</p>
-          <p>“Fomos iluminados pela luz divina e vimos a proteção de Deus na nossa vida. Que paz — gratidão Aline e Evandro.”</p>
-        </div>
-        <div class="t-card">
-          <p class="t-name">Germano Micheli</p>
-          <p>“Meditação e respiração de hoje foi incrível. Cada vez que participo fica melhor — não dá vontade de parar.”</p>
-        </div>
-        <div class="t-card">
-          <p class="t-name">Alini De Paris</p>
-          <p>“Sou grata pela experiência — me trouxe leveza, presença e conexão.”</p>
-        </div>
-        <div class="t-card">
-          <p class="t-name">Marisa</p>
-          <p>“Percebi o quanto é importante dar atenção à respiração e desacelerar. Já estou colocando em prática — tem me ajudado muito.”</p>
-        </div>
-        <div class="t-card">
-          <p class="t-name">Ivete</p>
-          <p>“Aprendi a controlar meus pensamentos. Saí em paz, com leveza e tive uma noite de sono tranquila.”</p>
-        </div>
-        <div class="t-card">
-          <p class="t-name">Michely</p>
-          <p>“Dia maravilhoso de muita aprendizagem. A partir de hoje vou ser outra pessoa. Só agradecimentos.”</p>
-        </div>
-        <div class="t-card">
-          <p class="t-name">Idalina</p>
-          <p>“Saí outra pessoa: leve, tranquila e confiante. A conexão do grupo e a troca de energias foram mágicas.”</p>
-        </div>
-        <div class="t-card">
-          <p class="t-name">Onira Marolli</p>
-          <p>“A vivência me tranquilizou e organizou os pensamentos. Agora é seguir com calma na alma.”</p>
-        </div>
+        <div class="t-card"><p class="t-name">Roselei Teles</p><p>“Fomos iluminados pela luz divina e vimos a proteção de Deus na nossa vida. Que paz — gratidão Aline e Evandro.”</p></div>
+        <div class="t-card"><p class="t-name">Germano Micheli</p><p>“Meditação e respiração de hoje foi incrível. Cada vez que participo fica melhor — não dá vontade de parar.”</p></div>
+        <div class="t-card"><p class="t-name">Alini De Paris</p><p>“Sou grata pela experiência — me trouxe leveza, presença e conexão.”</p></div>
+        <div class="t-card"><p class="t-name">Marisa</p><p>“Percebi o quanto é importante dar atenção à respiração e desacelerar. Já estou colocando em prática — tem me ajudado muito.”</p></div>
+        <div class="t-card"><p class="t-name">Ivete</p><p>“Aprendi a controlar meus pensamentos. Saí em paz, com leveza e tive uma noite de sono tranquila.”</p></div>
+        <div class="t-card"><p class="t-name">Michely</p><p>“Dia maravilhoso de muita aprendizagem. A partir de hoje vou ser outra pessoa. Só agradecimentos.”</p></div>
+        <div class="t-card"><p class="t-name">Idalina</p><p>“Saí outra pessoa: leve, tranquila e confiante. A conexão do grupo e a troca de energias foram mágicas.”</p></div>
+        <div class="t-card"><p class="t-name">Onira Marolli</p><p>“A vivência me tranquilizou e organizou os pensamentos. Agora é seguir com calma na alma.”</p></div>
       </div>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section id="faq" aria-labelledby="faqtitle">
+  <section>
     <div class="wrap">
       <span class="tag">FAQ</span>
-      <h2 id="faqtitle" class="section-title" style="margin-top:10px">Perguntas Frequentes</h2>
+      <h2 class="section-title" style="margin-top:10px">Perguntas Frequentes</h2>
       <div class="faq">
         <div class="faq-item">
           <button class="faq-q" aria-expanded="false"><span>Preciso ter experiência prévia?</span><span class="mark">+</span></button>
@@ -298,16 +314,14 @@
   </section>
 
   <!-- Rodapé -->
-  <footer role="contentinfo">
-    © 2025 Vivência de Meditação & Respiração Terapêutica — Todos os direitos reservados.
-  </footer>
+  <footer>© 2025 Vivência de Meditação & Respiração Terapêutica — Todos os direitos reservados.</footer>
 
-  <!-- Botão flutuante WhatsApp -->
+  <!-- WhatsApp flutuante -->
   <a class="whats-float" href="https://wa.me/5549998110445?text=Oi!%20Quero%20mais%20informacoes%20da%20Vivencia" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A10 10 0 0 0 3.2 17.7L2 22l4.4-1.2A10 10 0 1 0 20.5 3.5Zm-8.4 2.2c4.1 0 7.4 3.3 7.4 7.4a7.4 7.4 0 0 1-10.1 6.8l-.3-.1-2.6.7.7-2.5-.1-.3a7.4 7.4 0 0 1 5-11.9Zm4.2 9.8c-.2.6-1.1 1-1.5 1.1-.4.1-.9.1-1.5 0s-1.5-.5-2.6-1.1c-1-.6-1.8-1.6-2.1-2.1-.3-.5-.5-1.3-.1-1.9.2-.3.5-.8.8-.8h.6c.1 0 .4-.1.6.5.2.6.8 2 .9 2.2.1.2.1.4 0 .6s-.2.4-.4.6c-.2.2-.4.4-.2.7.2.3.9 1.4 2.1 2 .9.5 1.6.6 1.9.4.3-.2.4-.5.6-.8.2-.3.5-.4.8-.3l1.9.9c.3.1.5.3.6.5Z"/></svg>
   </a>
 
-  <!-- JS: FAQ acessível (abre um por vez) -->
+  <!-- FAQ toggle -->
   <script>
     (function(){
       const items = document.querySelectorAll('.faq-item');
