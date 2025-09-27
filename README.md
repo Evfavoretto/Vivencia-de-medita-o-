@@ -4,7 +4,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Vivência de Meditação & Respiração Terapêutica</title>
   <meta name="description" content="Vivência prática para reduzir estresse, acalmar a mente e reconectar com a presença — conduzida por Evandro & Alinne." />
-  <!-- SEO/OG -->
   <meta property="og:title" content="Vivência de Meditação & Respiração Terapêutica" />
   <meta property="og:description" content="Respiração consciente, meditação guiada e relaxamento profundo para leveza e clareza." />
   <meta property="og:type" content="website" />
@@ -29,11 +28,21 @@
     img{max-width:100%;display:block}
     a{text-decoration:none}
 
-    /* Barra topo */
+    /* Oculta header padrão do tema GitHub Pages */
+    header, .page-header, .site-header, .project-name, .project-tagline { display:none !important; }
+
+    /* Faixa rosa topo full-bleed */
     .top-bar{
-      background:var(--rose); color:#fff; text-align:center;
-      padding:14px 10px; font-weight:900; letter-spacing:.04em;
-      font-size:clamp(18px,4.4vw,26px); text-transform:uppercase;
+      position:relative;
+      width:100vw;
+      margin-left:calc(50% - 50vw);
+      background:var(--rose);
+      color:#fff;
+      text-align:center;
+      padding:22px 10px;
+      font-weight:900; letter-spacing:.06em;
+      font-size:clamp(20px,4.8vw,30px);
+      text-transform:uppercase;
     }
 
     .wrap{max-width:1100px;margin:0 auto}
@@ -70,7 +79,7 @@
     .list-check li{list-style:none;padding-left:28px;position:relative}
     .list-check li:before{content:"✓";position:absolute;left:0;top:0;color:var(--success);font-weight:900}
 
-    /* Tarja rosa */
+    /* Tarja rosa de seção */
     .tag{
       display:inline-block;background:var(--rose);color:#fff;
       font-weight:900;letter-spacing:.06em;text-transform:uppercase;
@@ -90,7 +99,7 @@
     .primary:hover{filter:brightness(1.05)}
     .ghost:hover{background:var(--blue);color:#fff}
 
-    /* ===== Instrutores (avatar redondo com anel) ===== */
+    /* Instrutores (foto redonda com anel) */
     .instrutores-grid{display:grid;gap:22px;grid-template-columns:1fr}
     @media(min-width:800px){.instrutores-grid{grid-template-columns:1fr 1fr}}
     .inst-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:0 10px 26px rgba(0,0,0,.06);text-align:center}
@@ -99,7 +108,7 @@
     .avatar-wrap{width:160px;height:160px;margin:8px auto 12px;display:grid;place-items:center;border-radius:50%;
       background:conic-gradient(from 200deg,#f6d,#ff9a9e,#fecfef,#f6d);}
     .avatar-ring{width:144px;height:144px;border-radius:50%;background:#fff;display:grid;place-items:center}
-    .avatar{width:132px;height:132px;border-radius:50%;object-fit:cover;display:block}
+    .avatar{width:132px;height:132px;border-radius:50%;object-fit:cover;display:block;object-position:center var(--avatar-y,50%)}
     .inst-list{margin:10px auto 0;max-width:520px;text-align:left;color:var(--soft);font-size:15px;line-height:1.55}
     .inst-list li{margin:6px 0}
     .inst-note{margin-top:10px;font-size:14px;color:#64748b;text-align:center}
@@ -124,24 +133,13 @@
     .faq-item.open .faq-a{max-height:360px}
     .faq-item.open .faq-q .mark{opacity:.9}
 
-    /* CTA final + rodapé */
-    .footer-cta{background:var(--blue-2);border:1px solid #dbeafe;border-radius:16px;padding:26px;display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:space-between}
     footer{padding:28px 0;background:var(--rose);color:#fff;font-size:14px;text-align:center}
-
-    /* WhatsApp flutuante */
-    .whats-float{
-      position:fixed; right:22px; bottom:18px; z-index:1000;
-      width:60px; height:60px; border-radius:50%;
-      background:#25D366; box-shadow:0 12px 28px rgba(0,0,0,.18);
-      display:flex; align-items:center; justify-content:center;
-    }
-    .whats-float svg{width:30px;height:30px;fill:#fff}
   </style>
 </head>
 <body>
 
   <!-- Topo -->
-  <div class="top-bar">Vivência de Meditação & Respiração Terapêutica</div>
+  <div class="top-bar">VIVÊNCIA DE MEDITAÇÃO & RESPIRAÇÃO TERAPÊUTICA</div>
 
   <!-- Hero -->
   <div class="hero">
@@ -152,54 +150,51 @@
         <div class="divider" aria-hidden="true"></div>
         <div class="cta">
           <a href="#inscricao" class="btn primary">Quero participar</a>
-          <a href="https://wa.me/5549998110445?text=Quero%20saber%20mais%20sobre%20a%20Viv%C3%AAncia%20de%20Medita%C3%A7%C3%A3o%20%26%20Respira%C3%A7%C3%A3o" class="btn ghost" target="_blank" rel="noopener">Falar no WhatsApp</a>
+          <a href="https://wa.me/5549998110445?text=Quero%20saber%20mais%20sobre%20a%20Viv%C3%AAncia" class="btn ghost" target="_blank" rel="noopener">Falar no WhatsApp</a>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- O que é / Benefícios -->
+  <!-- O que é -->
   <section>
     <div class="wrap">
+      <span class="tag">O que é</span>
+      <h2 class="section-title" style="margin-top:10px">Vivência terapêutica</h2>
       <div class="grid two">
         <div class="card pink">
-          <span class="tag">O que é</span>
-          <h2 class="grad-left">Vivência terapêutica</h2>
-          <p>Integra técnicas de respiração, meditação e atenção plena para desacelerar, aliviar tensões e abrir espaço para clareza emocional.</p>
+          <h3 class="grad-left">Integração mente–corpo</h3>
+          <p>Respiração, meditação e atenção plena para desacelerar e abrir espaço para clareza emocional.</p>
         </div>
         <div class="card blue">
-          <span class="tag">Benefícios</span>
-          <h2 class="grad-left">Resultados que você sente</h2>
-          <ul class="list-check">
-            <li>Redução do estresse e da ansiedade</li>
-            <li>Melhora do sono e do foco</li>
-            <li>Regulação emocional e paz interna</li>
-            <li>Consciência corporal e energia estável</li>
-            <li>Mais presença, fé e confiança na vida</li>
-            <li>Ferramentas simples para o dia a dia</li>
-          </ul>
+          <h3 class="grad-left">Aplicável no dia a dia</h3>
+          <p>Ferramentas simples que você leva para a rotina: pausas conscientes, presença e autocuidado.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Para quem é / Como funciona -->
+  <!-- Benefícios -->
   <section>
     <div class="wrap">
+      <span class="tag">Benefícios</span>
+      <h2 class="section-title" style="margin-top:10px">Resultados que você sente</h2>
       <div class="grid two">
-        <div class="card">
-          <span class="tag">Para quem é</span>
-          <h2 class="grad-left">Aberta a todos os níveis</h2>
-          <ul class="list-check">
-            <li>Pessoas em busca de leveza e organização mental</li>
-            <li>Quem vive “no 360” e precisa desacelerar</li>
-            <li>Iniciantes e praticantes — sem pré-requisitos</li>
-          </ul>
+        <div class="card pink">
+          <h3 class="grad-left">Menos estresse</h3>
+          <p>Reduz ansiedade e tensão física.</p>
         </div>
-        <div class="card">
-          <span class="tag">Como funciona</span>
-          <h2 class="grad-left">Encontro presencial em grupo</h2>
-          <p>Práticas conduzidas, pausas conscientes e orientações para aplicar no cotidiano.</p>
+        <div class="card blue">
+          <h3 class="grad-left">Sono melhor</h3>
+          <p>Mente mais calma para noites restauradoras.</p>
+        </div>
+        <div class="card pink">
+          <h3 class="grad-left">Clareza e foco</h3>
+          <p>Organiza pensamentos e apoia decisões.</p>
+        </div>
+        <div class="card blue">
+          <h3 class="grad-left">Presença</h3>
+          <p>Mais conexão consigo e com a vida.</p>
         </div>
       </div>
     </div>
@@ -213,41 +208,27 @@
 
       <div class="instrutores-grid">
         <!-- Evandro -->
-        <figure class="inst-card" role="group" aria-labelledby="evandro-name">
+        <figure class="inst-card">
           <div class="avatar-wrap"><div class="avatar-ring">
-            <img class="avatar" src="evandro.jpg" alt="Evandro — foto de perfil redonda">
+            <img class="avatar" src="evandro.jpg" alt="Evandro — foto de perfil redonda" style="--avatar-y:60%;">
           </div></div>
           <figcaption>
-            <div id="evandro-name" class="inst-name">Evandro</div>
+            <div class="inst-name">Evandro</div>
             <p class="inst-role">Facilitador • Respiração & Meditação</p>
-            <ul class="inst-list">
-              <li>Formação em Respiração Consciente (Breathwork)</li>
-              <li>Constelação Familiar & Sistêmica</li>
-              <li>Inteligência Emocional e Comunicação Não Violenta</li>
-              <li>Condução de grupos e vivências</li>
-            </ul>
           </figcaption>
         </figure>
 
         <!-- Alinne -->
-        <figure class="inst-card" role="group" aria-labelledby="alinne-name">
+        <figure class="inst-card">
           <div class="avatar-wrap"><div class="avatar-ring">
-            <img class="avatar" src="alinne.jpg" alt="Alinne — foto de perfil redonda">
+            <img class="avatar" src="alinne.jpg" alt="Alinne — foto de perfil redonda" style="--avatar-y:60%;">
           </div></div>
           <figcaption>
-            <div id="alinne-name" class="inst-name">Alinne</div>
+            <div class="inst-name">Alinne</div>
             <p class="inst-role">Facilitadora • Respiração & Presença</p>
-            <ul class="inst-list">
-              <li>Formação em Meditação Guiada & Mindfulness</li>
-              <li>Respiração Terapêutica e Regulação Emocional</li>
-              <li>Constelação Sistêmica (atendimento em grupo)</li>
-              <li>Experiência em acolhimento e processos de cura</li>
-            </ul>
           </figcaption>
         </figure>
       </div>
-
-      <p class="inst-note">Evandro &amp; Alinne conduzem juntos a Vivência de Meditação &amp; Respiração Terapêutica.</p>
     </div>
   </section>
 
@@ -270,10 +251,13 @@
       <span class="tag">Depoimentos Reais</span>
       <h2 class="section-title" style="margin-top:10px">O que as pessoas sentiram</h2>
       <div class="testimonials">
-        <div class="t-card"><p class="t-name">Roselei Teles</p><p>“Fomos iluminados pela luz divina e vimos a proteção de Deus na nossa vida. Que paz — gratidão Aline e Evandro.”</p></div>
-        <div class="t-card"><p class="t-name">Germano Micheli</p><p>“Cada vez que participo fica melhor — não dá vontade de parar.”</p></div>
-        <div class="t-card"><p class="t-name">Alini De Paris</p><p>“Sou grata pela experiência — me trouxe leveza, presença e conexão.”</p></div>
-        <div class="t-card"><p class="t-name">Marisa</p><p>“Percebi o quanto é importante dar atenção à respiração e desacelerar. Já estou colocando em prática.”</p></div>
+        <div class="t-card"><p class="t-name">Ivete</p><p>“A vivência de ontem foi maravilhosa. Aprendi que preciso controlar meus pensamentos. Saí em paz, com uma leveza que nunca senti; tive uma noite de sono muito tranquila. Estou decidida a mudar.”</p></div>
+        <div class="t-card"><p class="t-name">Germano</p><p>“Meditação e respiração de hoje foi incrível; cada vez que participo fica melhor — daí não dá vontade de parar kkkk.”</p></div>
+        <div class="t-card"><p class="t-name">Aline</p><p>“Hoje foi muito bom. Sou grata pela experiência, pois me trouxe leveza, presença e conexão.”</p></div>
+        <div class="t-card"><p class="t-name">Marisa</p><p>“Percebi o quanto é importante dar atenção ao pensamento e à respiração, desacelerar. O que aprendemos já está me ajudando no dia a dia.”</p></div>
+        <div class="t-card"><p class="t-name">Michely</p><p>“Um dia maravilhoso de muito aprendizado. A partir de hoje vou ser outra pessoa. Agradeço à Aline, ao Evandro e a todos que estiveram presentes.”</p></div>
+        <div class="t-card"><p class="t-name">Idalina</p><p>“Fui com a ideia de ‘meditação normal’. Saí outra Idalina — leve, tranquila e confiante. A troca de energias do grupo é mágica. Estou renovada em paz.”</p></div>
+        <div class="t-card"><p class="t-name">Onira</p><p>“A vivência me tranquilizou, organizou os pensamentos. Agora, seguir com calma na alma.”</p></div>
       </div>
     </div>
   </section>
@@ -300,28 +284,8 @@
     </div>
   </section>
 
-  <!-- CTA final -->
-  <section style="padding:32px 20px">
-    <div class="wrap">
-      <div class="footer-cta">
-        <div>
-          <div style="font-weight:800;color:var(--rose);letter-spacing:.06em;text-transform:uppercase;font-size:12px">Respire diferente</div>
-          <h3 style="margin:6px 0 0;font-size:22px;color:var(--ink)">Você no controle da sua presença — um passo de cada vez.</h3>
-        </div>
-        <a href="https://wa.me/5549998110445?text=Quero%20participar%20da%20Viv%C3%AAncia" class="btn primary" target="_blank" rel="noopener">Inscrever-se agora</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Rodapé -->
   <footer>© 2025 Vivência de Meditação & Respiração Terapêutica — Todos os direitos reservados.</footer>
 
-  <!-- WhatsApp flutuante -->
-  <a class="whats-float" href="https://wa.me/5549998110445?text=Oi!%20Quero%20mais%20informacoes%20da%20Vivencia" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A10 10 0 0 0 3.2 17.7L2 22l4.4-1.2A10 10 0 1 0 20.5 3.5Zm-8.4 2.2c4.1 0 7.4 3.3 7.4 7.4a7.4 7.4 0 0 1-10.1 6.8l-.3-.1-2.6.7.7-2.5-.1-.3a7.4 7.4 0 0 1 5-11.9Zm4.2 9.8c-.2.6-1.1 1-1.5 1.1-.4.1-.9.1-1.5 0s-1.5-.5-2.6-1.1c-1-.6-1.8-1.6-2.1-2.1-.3-.5-.5-1.3-.1-1.9.2-.3.5-.8.8-.8h.6c.1 0 .4-.1.6.5.2.6.8 2 .9 2.2.1.2.1.4 0 .6s-.2.4-.4.6c-.2.2-.4.4-.2.7.2.3.9 1.4 2.1 2 .9.5 1.6.6 1.9.4.3-.2.4-.5.6-.8.2-.3.5-.4.8-.3l1.9.9c.3.1.5.3.6.5Z"/></svg>
-  </a>
-
-  <!-- JS: FAQ acessível (abre um por vez) -->
   <script>
     (function(){
       const items = document.querySelectorAll('.faq-item');
