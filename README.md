@@ -221,7 +221,7 @@
         <!-- Alinne -->
         <figure class="inst-card">
           <div class="avatar-wrap"><div class="avatar-ring">
-            <img class="avatar" src="alinne.jpg" alt="Alinne — foto de perfil redonda" style="--avatar-y:60%;">
+            <img class="avatar" src="alinne.jpg" alt="Alinne — foto de perfil redonda" style="--avatar-y:70%;">
           </div></div>
           <figcaption>
             <div class="inst-name">Alinne</div>
