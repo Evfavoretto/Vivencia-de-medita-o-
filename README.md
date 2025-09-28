@@ -108,7 +108,7 @@
     .avatar-wrap{width:160px;height:160px;margin:8px auto 12px;display:grid;place-items:center;border-radius:50%;
       background:conic-gradient(from 200deg,#f6d,#ff9a9e,#fecfef,#f6d);}
     .avatar-ring{width:144px;height:144px;border-radius:50%;background:#fff;display:grid;place-items:center}
-    .avatar{width:132px;height:132px;border-radius:50%;object-fit:cover;display:block;object-position:center var(--avatar-y,70%)}
+    .avatar{width:132px;height:132px;border-radius:50%;object-fit:cover;display:block;object-position:center var(--avatar-y,30%)}
     .inst-list{margin:10px auto 0;max-width:520px;text-align:left;color:var(--soft);font-size:15px;line-height:1.55}
     .inst-list li{margin:6px 0}
     .inst-note{margin-top:10px;font-size:14px;color:#64748b;text-align:center}
