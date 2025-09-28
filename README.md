@@ -285,7 +285,7 @@
         </div>
         <div class="faq-item">
           <button class="faq-q" aria-expanded="false"><span>Duração do encontro</span><span class="mark">+</span></button>
-          <div class="faq-a" aria-hidden="true"><div class="faq-a-inner">Imersão de aproximadamente 3 horas.</div></div>
+          <div class="faq-a" aria-hidden="true"><div class="faq-a-inner">Imersão de um dia inteiro, das 8h ás 17h com intervalo de almoço.</div></div>
         </div>
       </div>
     </div>
