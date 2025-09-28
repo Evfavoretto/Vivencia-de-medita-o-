@@ -7,7 +7,7 @@
   <meta property="og:title" content="Vivência de Meditação & Respiração Terapêutica" />
   <meta property="og:description" content="Respiração consciente, meditação guiada e relaxamento profundo para leveza e clareza." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Meditacao+%26+Respiracao+Terapeutica" />
+  <meta property="og:image" content="https://via.placeholder.com/1200x930.png?text=Meditacao+%26+Respiracao+Terapeutica" />
   <meta name="twitter:card" content="summary_large_image" />
 
   <style>
@@ -108,7 +108,7 @@
     .avatar-wrap{width:160px;height:160px;margin:8px auto 12px;display:grid;place-items:center;border-radius:50%;
       background:conic-gradient(from 200deg,#f6d,#ff9a9e,#fecfef,#f6d);}
     .avatar-ring{width:144px;height:144px;border-radius:50%;background:#fff;display:grid;place-items:center}
-    .avatar{width:132px;height:132px;border-radius:50%;object-fit:cover;display:block;object-position:center var(--avatar-y,30%)}
+    .avatar{width:132px;height:132px;border-radius:50%;object-fit:cover;display:block;object-position:center var(--avatar-y,10%)}
     .inst-list{margin:10px auto 0;max-width:520px;text-align:left;color:var(--soft);font-size:15px;line-height:1.55}
     .inst-list li{margin:6px 0}
     .inst-note{margin-top:10px;font-size:14px;color:#64748b;text-align:center}
@@ -210,7 +210,7 @@
         <!-- Evandro -->
         <figure class="inst-card">
           <div class="avatar-wrap"><div class="avatar-ring">
-            <img class="avatar" src="evandro.jpg" alt="Evandro — foto de perfil redonda" style="--avatar-y:60%;">
+            <img class="avatar" src="evandro.jpg" alt="Evandro — foto de perfil redonda" style="--avatar-y:50%;">
           </div></div>
           <figcaption>
             <div class="inst-name">Evandro</div>
@@ -221,7 +221,7 @@
         <!-- Alinne -->
         <figure class="inst-card">
           <div class="avatar-wrap"><div class="avatar-ring">
-            <img class="avatar" src="alinne.jpg" alt="Alinne — foto de perfil redonda" style="--avatar-y:70%;">
+            <img class="avatar" src="alinne.jpg" alt="Alinne — foto de perfil redonda" style="--avatar-y:10%;">
           </div></div>
           <figcaption>
             <div class="inst-name">Alinne</div>
