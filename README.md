@@ -21,6 +21,8 @@
       --line:#E9EEF5;
       --bg:#FFFFFF;
       --success:#10B981;
+      /* altura da faixa rosa fixa (ajuste aqui se quiser maior/menor) */
+      --topbar-h: clamp(70px, 9vw, 110px);
     }
     *{box-sizing:border-box}
     html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);
@@ -28,22 +30,29 @@
     img{max-width:100%;display:block}
     a{text-decoration:none}
 
-    /* Oculta header padrão do tema GitHub Pages */
-    header, .page-header, .site-header, .project-name, .project-tagline { display:none !important; }
+    /* 💣 Some com headers/títulos do tema do GitHub Pages (vários temas) */
+    header, .page-header, .site-header, .project-name, .project-tagline,
+    #header, #banner, .header, .site-title, .site-nav, .masthead,
+    body > h1:first-of-type, body > .octicon-link, body > .container-lg > h1 {
+      display:none !important;
+      visibility:hidden !important;
+      height:0 !important; margin:0 !important; padding:0 !important;
+    }
 
-    /* Faixa rosa topo full-bleed */
+    /* Faixa rosa topo: fixa, full-bleed, sobrepondo o que estiver por baixo */
     .top-bar{
-      position:relative;
-      width:100vw;
-      margin-left:calc(50% - 50vw);
-      background:var(--rose);
-      color:#fff;
-      text-align:center;
-      padding:22px 10px;
+      position:fixed; inset:0 auto auto 50%;
+      transform:translateX(-50%);
+      width:100vw;                 /* borda a borda */
+      background:var(--rose); color:#fff; text-align:center;
+      padding:22px 10px;           /* altura da tarja */
       font-weight:900; letter-spacing:.06em;
       font-size:clamp(20px,4.8vw,30px);
       text-transform:uppercase;
+      z-index:9999;                /* por cima do título azul */
     }
+    /* Empurra o conteúdo pra baixo da faixa fixa */
+    body{ padding-top:var(--topbar-h); }
 
     .wrap{max-width:1100px;margin:0 auto}
     section{padding:56px 20px;border-bottom:1px solid var(--line)}
@@ -138,7 +147,7 @@
 </head>
 <body>
 
-  <!-- Topo -->
+  <!-- Topo (fixo e cobrindo o “azul” do GitHub) -->
   <div class="top-bar">VIVÊNCIA DE MEDITAÇÃO & RESPIRAÇÃO TERAPÊUTICA</div>
 
   <!-- Hero -->
@@ -286,6 +295,7 @@
 
   <footer>© 2025 Vivência de Meditação & Respiração Terapêutica — Todos os direitos reservados.</footer>
 
+  <!-- JS FAQ acessível -->
   <script>
     (function(){
       const items = document.querySelectorAll('.faq-item');
